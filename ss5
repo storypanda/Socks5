@@ -14,7 +14,7 @@ if [[ ! -f /etc/os-release ]]; then
   exit 1
 fi
 source /etc/os-release
-if [[ "${ID}" != "centos" || ( "${VERSION_ID}" != "7" && "${VERSION_ID}" != "8" ) ]]; then
+if [[ "${ID}" != "centos" || ( "${VERSION_ID}" != "7" && "${VERSION_ID}" != "8"  && "${VERSION_ID}" != "9" ) ]]; then
   echo "本脚本仅支持CentOS7或8"
   exit 1
 fi
