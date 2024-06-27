@@ -23,9 +23,6 @@ fi
 # 显示命令菜单
 show_menu() {
   echo -e
-  echo -e "\033[32m----------- AaIT.io 专注住宅IP服务器 --------------\033[0m"
-  echo -e "\033[32m--------- 自有硬件与基础设施当地租房拉宽带 --------\033[0m"
-  echo -e "\033[32m------- 跨境电商TikTok直播养号ChatGPT全搞定 -------\033[0m"
   echo -e
   echo "1. 安装 Socks5"
   echo "2. 重启 Socks5"
@@ -41,9 +38,9 @@ action1() {
 if [ ! -f "/usr/local/bin/gost" ]; then
   # 下载配套程序和脚本
   echo "正在下载程序 ..."
-  curl -sSL -o /usr/local/bin/gost -L https://github.com/AaIT-io/Socks5/raw/main/gost
-  curl -sSL -o /usr/local/bin/ss5 -L https://github.com/AaIT-io/Socks5/raw/main/ss5
-  curl -sSL -o /usr/local/bin/ss5-start -L https://github.com/AaIT-io/Socks5/raw/main/ss5-start
+  curl -sSL -o /usr/local/bin/gost -L https://github.com/Hopeail/Socks5/raw/main/gost
+  curl -sSL -o /usr/local/bin/ss5 -L https://github.com/Hopeail/Socks5/raw/main/ss5
+  curl -sSL -o /usr/local/bin/ss5-start -L https://github.com/Hopeail/Socks5/raw/main/ss5-start
   chmod 755 /usr/local/bin/*
   # 询问Socks5账号密码端口
   echo "注意Socks5的账号密码只能数字和字母不能带特殊字符否则无法启动"
