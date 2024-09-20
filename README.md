@@ -1,4 +1,4 @@
 
 
-    bash <(curl -sSL https://github.com/Hopeail/Socks5/raw/main/ss5)
+    bash <(curl -sSL https://github.com/storypanda/Socks5/raw/main/ss5)
 
