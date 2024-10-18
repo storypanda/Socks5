@@ -8,18 +8,6 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 
-# 检查操作系统
-if [[ ! -f /etc/os-release ]]; then
-  echo "无法确定操作系统类型"
-  exit 1
-fi
-source /etc/os-release
-if [[ "${ID}" != "centos" || ( "${VERSION_ID}" != "7" && "${VERSION_ID}" != "8"  && "${VERSION_ID}" != "9" ) ]]; then
-  echo "本脚本仅支持CentOS7或8"
-  exit 1
-fi
-
-
 # 显示命令菜单
 show_menu() {
   echo -e
